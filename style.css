@@ -1,0 +1,60 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 5px;
+}
+
+ .wrapper div {
+    background: #1488CC;
+
+    padding: 15px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+p {
+    margin: 5px 0;
+}
+
+div img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+div p+p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .flex {
+        flex-wrap: nowrap;
+    }
+
+    .flex .wrapper {
+        width: 33%;
+    }
+
+    .grid{
+        grid-template-columns: 12fr 16fr 10fr;
+    }
+}
+
+
+.grid{
+    display: grid;
+    width: calc(100% - 10px);
+    grid-column-gap: 10px;
+}
